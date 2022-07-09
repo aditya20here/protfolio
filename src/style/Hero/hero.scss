@@ -1,0 +1,129 @@
+@import "../abstracts/variables";
+@import "../components/button";
+
+.bottom-line {
+  width: 330px;
+  height: 1px;
+  background-color: $linesColor;
+  position: relative;
+}
+
+.HeroContent {
+  background-color: $content_background;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0em 0em 0em;
+  img {
+    width: 14em;
+    float: right;
+  }
+}
+
+.introduceMe {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0em 0em 0em;
+  text-align: center;
+  // &:hover {
+  // animation: bottomLineAnim 0.5s ease-in;
+  // transition: 0.5s;
+  // }
+
+  .bottomLine:nth-child(2) {
+    @extend .bottom-line;
+    margin: -1em 0em 0em 1em;
+  }
+
+  .bottomLine:nth-child(3) {
+    @extend .bottom-line;
+    margin: 0.2em 1em 0em 0em;
+  }
+}
+
+.know-more-btn {
+  @extend .explore-btn;
+  margin: 1.5em 0em 0em 0em;
+  animation: shakeAnim 5s ease-in;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+}
+
+@keyframes shakeAnim {
+  1% {
+    transform: rotate(-10deg);
+  }
+  2% {
+    transform: rotate(10deg);
+  }
+  3% {
+    transform: rotate(-10deg);
+  }
+  4% {
+    transform: rotate(10deg);
+  }
+  5% {
+    transform: rotate(-10deg);
+  }
+  6% {
+    transform: rotate(10deg);
+  }
+
+  7% {
+    transform: rotate(0deg);
+  }
+  8% {
+    transform: rotate(0deg);
+  }
+  9% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  11% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(0deg);
+  }
+  13% {
+    transform: rotate(0deg);
+  }
+  100% {
+    // transform: rotate(0deg);
+  }
+}
+
+// @keyframes bottomLineAnim {
+//   from {
+//     .bottomLine:nth-child(2) {
+//       @extend .bottom-line;
+//       margin: -1em 0em 0em 1em;
+//     }
+
+//     .bottomLine:nth-child(3) {
+//       @extend .bottom-line;
+//       margin: 0.2em 1em 0em 0em;
+//     }
+//   }
+//   to {
+//     .bottomLine:nth-child(2) {
+//       @extend .bottom-line;
+//       margin: -1em 1em 0em 0em;
+//       background-color: beige;
+//     }
+
+//     .bottomLine:nth-child(3) {
+//       @extend .bottom-line;
+//       margin: 0.2em 0em 0em 1em;
+//     }
+//   }
+// }

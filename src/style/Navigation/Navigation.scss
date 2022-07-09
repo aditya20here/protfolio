@@ -1,0 +1,38 @@
+@import "../abstracts/variables";
+.navbar {
+  z-index: 1;
+  position: absolute;
+  width: -webkit-fill-available;
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.navContent {
+  ul {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    padding: 0em 0em 0em 0em;
+
+    li {
+      list-style: none;
+      padding-bottom: 3px;
+      z-index: 1;
+      &::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid $linesColor;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
+
+      a {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
