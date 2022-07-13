@@ -1,0 +1,55 @@
+$mobile-s: 320px;
+$mobile-m: 385px;
+$mobile-l: 425px;
+$tablet-s: 632px;
+$tablet: 860px;
+$laptop-m: 964px;
+$laptop: 1024px;
+$laptop-l: 1440px;
+
+/*
+    iem = 14px
+*/
+
+@mixin for_breakpoint($breakpoint) {
+  @if ($breakpoint == mobile-s) {
+    @media (max-width: $mobile-s) {
+      @content;
+    }
+  }
+  @if ($breakpoint == mobile-m) {
+    @media (max-width: $mobile-m) {
+      @content;
+    }
+  }
+  @if ($breakpoint == mobile-l) {
+    @media (max-width: $mobile-l) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tablet-m) {
+    @media (max-width: $tablet-s) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tablet) {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  }
+  @if ($breakpoint == laptop-m) {
+    @media (max-width: $laptop-m) {
+      @content;
+    }
+  }
+  @if ($breakpoint == laptop) {
+    @media (max-width: $laptop) {
+      @content;
+    }
+  }
+  @if ($breakpoint == laptop-l) {
+    @media (max-width: $laptop-l) {
+      @content;
+    }
+  }
+}

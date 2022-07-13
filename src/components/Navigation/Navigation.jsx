@@ -6,7 +6,7 @@ const Navigation = () => {
             <nav className='navbar'>
                 <div className='navContent'>
                     <ul >
-                        <li><a href='#about' >About & Skills</a></li>
+                        <li><a href='#about' >About {/*& Skills*/}</a></li>
                         <li><a href='#projects'>Projects</a></li>
                     </ul>
                 </div>

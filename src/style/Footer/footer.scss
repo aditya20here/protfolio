@@ -4,7 +4,10 @@
   justify-content: center;
 }
 
-.up-arrow:hover {
-  margin-top: -0.5em;
-  transition: 500ms;
+.up-arrow {
+  margin-top: 10px;
+  &:hover {
+    margin-top: -50px;
+    transition: 500ms;
+  }
 }

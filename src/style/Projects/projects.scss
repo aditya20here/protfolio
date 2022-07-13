@@ -1,7 +1,13 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .project-heading {
   margin: 4em 0em 0em 1em;
+
+  @include for_breakpoint(laptop-m) {
+    // margin-top: 20em;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -13,29 +19,62 @@
 
 .card {
   margin: 7em 0em 7em 4em;
+  @include for_breakpoint(tablet) {
+    margin: 7em 0em 7em 0em;
+  }
 }
 
 .card-content {
   display: flex;
+
+  @include for_breakpoint(tablet) {
+    display: grid;
+    grid-template-columns: 2;
+    justify-content: center;
+  }
 }
 
 .card-image {
   img {
     width: 32em;
+
+    @include for_breakpoint(laptop) {
+      width: 26em;
+    }
+
+    @include for_breakpoint(mobile-l) {
+      width: 20em;
+    }
+  }
+  @include for_breakpoint(tablet) {
+    text-align: center;
   }
 }
 
 .content {
   margin: 0em 2em 0em 2em;
+  @include for_breakpoint(tablet) {
+    margin: 0em 1em 0em 0em;
+  }
 }
 
 .card-heading {
+  @include for_breakpoint(laptop) {
+    margin-top: -1em;
+  }
+  @include for_breakpoint(tablet) {
+    margin-top: 2em;
+    margin-left: 1em;
+  }
   h2 {
     font-weight: bold;
   }
 }
 
 .main {
+  @include for_breakpoint(tablet) {
+    margin-left: 1em;
+  }
   margin-left: 1em;
 }
 

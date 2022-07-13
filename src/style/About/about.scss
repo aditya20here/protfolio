@@ -1,26 +1,44 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .heading {
   margin: 5em 2em 2em 2em;
+  @include for_breakpoint(laptop) {
+    margin-top: 10em;
+  }
+  @include for_breakpoint(tablet) {
+    margin-top: 15em;
+  }
   h1 {
     &::after {
       content: "";
       display: block;
       margin-top: 0.3em;
-      width: 7em;
+      width: 3.5em;
       border-bottom: 2px solid white;
     }
   }
 }
 
 .about-me-content {
-  margin: 7em 2em 2em 2em;
+  margin: 7em 0em 2em 0em;
+
+  @include for_breakpoint(laptop) {
+    margin: 7em 1em 2em 1em;
+  }
+  @include for_breakpoint(laptop-m) {
+    margin: 7em 1em 2em 1em;
+  }
 
   .avatar {
     width: 7em;
     height: 7em;
     margin-top: -7em;
     margin-left: 4.5em;
+
+    @include for_breakpoint(mobile-l) {
+      margin-left: 2.5em;
+    }
   }
 
   .my-self {
@@ -29,10 +47,14 @@
     width: 20em;
     float: left;
     padding: 4em 2em 2em 2em;
-    margin: 0em 0em 0em 7em;
     border-radius: 1.5em;
     color: black;
     font-weight: 800;
+
+    @include for_breakpoint(mobile-l) {
+      width: 15em;
+    }
+
     p {
       color: black;
     }
@@ -45,13 +67,29 @@
 }
 
 .about-and-skills-content {
-  height: 100vh;
+  // height: auto;
+
   display: flex;
+
+  @include for_breakpoint(laptop-m) {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    justify-content: center;
+  }
 }
 
 .small-about-heading {
   width: 80px;
   margin-left: 4em;
+
+  @include for_breakpoint(laptop) {
+    margin-left: 2em;
+    display: block;
+    position: relative;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -61,6 +99,9 @@
 }
 
 .skill-heading {
+  @include for_breakpoint(laptop) {
+    margin-left: -2em;
+  }
   h3::after {
     content: "";
     display: block;
@@ -72,6 +113,10 @@
 
 .skill-content {
   margin: 7em 1em 0em 2em;
+
+  @include for_breakpoint(laptop) {
+    margin: 7em 1em 0em 0em;
+  }
 }
 
 .app-tools {

@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 @import "../components/button";
+@import "../abstracts/mixins";
 
 .bottom-line {
   width: 330px;
@@ -22,12 +23,30 @@
   img {
     width: 14em;
     float: right;
+
+    @include for_breakpoint(laptop) {
+      margin: 2em 0em 0em 0em;
+      width: 10em;
+    }
   }
 }
 
 .profiles {
   display: flex;
   justify-content: center;
+
+  @include for_breakpoint(tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  @include for_breakpoint(mobile-m) {
+    // display: grid;
+    grid-template-columns: auto auto auto;
+    // justify-content: center;
+  }
+
   a {
     color: white;
     margin: 0.5em;
@@ -35,6 +54,7 @@
     display: flex;
     justify-content: center;
     padding: 0.5em;
+
     img {
       margin: 0em 0.5em 0em 0em;
     }
@@ -192,29 +212,3 @@
     // transform: rotate(0deg);
   }
 }
-
-// @keyframes bottomLineAnim {
-//   from {
-//     .bottomLine:nth-child(2) {
-//       @extend .bottom-line;
-//       margin: -1em 0em 0em 1em;
-//     }
-
-//     .bottomLine:nth-child(3) {
-//       @extend .bottom-line;
-//       margin: 0.2em 1em 0em 0em;
-//     }
-//   }
-//   to {
-//     .bottomLine:nth-child(2) {
-//       @extend .bottom-line;
-//       margin: -1em 1em 0em 0em;
-//       background-color: beige;
-//     }
-
-//     .bottomLine:nth-child(3) {
-//       @extend .bottom-line;
-//       margin: 0.2em 0em 0em 1em;
-//     }
-//   }
-// }

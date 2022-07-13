@@ -8,8 +8,12 @@
           justify-content: center;
 }
 
+.up-arrow {
+  margin-top: 10px;
+}
+
 .up-arrow:hover {
-  margin-top: -0.5em;
+  margin-top: -50px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }

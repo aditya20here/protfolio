@@ -26,6 +26,9 @@
   text-decoration: none;
 }
 
+/*
+    iem = 14px
+*/
 :root {
   background-color: #001c18;
   margin: 0px;
@@ -70,6 +73,9 @@ p {
   text-decoration: none;
 }
 
+/*
+    iem = 14px
+*/
 .bottom-line, .introduceMe .bottomLine:nth-child(2), .introduceMe .bottomLine:nth-child(3) {
   width: 330px;
   height: 1px;
@@ -103,6 +109,13 @@ p {
   float: right;
 }
 
+@media (max-width: 1024px) {
+  .heroImage img {
+    margin: 2em 0em 0em 0em;
+    width: 10em;
+  }
+}
+
 .profiles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +123,25 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .profiles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 385px) {
+  .profiles {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
 }
 
 .profiles a {
@@ -381,8 +413,12 @@ p {
           justify-content: center;
 }
 
+.up-arrow {
+  margin-top: 10px;
+}
+
 .up-arrow:hover {
-  margin-top: -0.5em;
+  margin-top: -50px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -435,20 +471,47 @@ p {
   text-decoration: none;
 }
 
+/*
+    iem = 14px
+*/
 .heading {
   margin: 5em 2em 2em 2em;
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    margin-top: 10em;
+  }
+}
+
+@media (max-width: 860px) {
+  .heading {
+    margin-top: 15em;
+  }
 }
 
 .heading h1::after {
   content: "";
   display: block;
   margin-top: 0.3em;
-  width: 7em;
+  width: 3.5em;
   border-bottom: 2px solid white;
 }
 
 .about-me-content {
-  margin: 7em 2em 2em 2em;
+  margin: 7em 0em 2em 0em;
+}
+
+@media (max-width: 1024px) {
+  .about-me-content {
+    margin: 7em 1em 2em 1em;
+  }
+}
+
+@media (max-width: 964px) {
+  .about-me-content {
+    margin: 7em 1em 2em 1em;
+  }
 }
 
 .about-me-content .avatar {
@@ -458,16 +521,27 @@ p {
   margin-left: 4.5em;
 }
 
+@media (max-width: 425px) {
+  .about-me-content .avatar {
+    margin-left: 2.5em;
+  }
+}
+
 .about-me-content .my-self {
   background-color: #ff912a;
   height: auto;
   width: 20em;
   float: left;
   padding: 4em 2em 2em 2em;
-  margin: 0em 0em 0em 7em;
   border-radius: 1.5em;
   color: black;
   font-weight: 800;
+}
+
+@media (max-width: 425px) {
+  .about-me-content .my-self {
+    width: 15em;
+  }
 }
 
 .about-me-content .my-self p {
@@ -480,10 +554,24 @@ p {
 }
 
 .about-and-skills-content {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 964px) {
+  .about-and-skills-content {
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+    -ms-grid-rows: 1;
+        grid-template-rows: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .small-about-heading {
@@ -491,11 +579,25 @@ p {
   margin-left: 4em;
 }
 
+@media (max-width: 1024px) {
+  .small-about-heading {
+    margin-left: 2em;
+    display: block;
+    position: relative;
+  }
+}
+
 .small-about-heading::after {
   content: "";
   display: block;
   margin-top: 0.3em;
   border-bottom: 2px solid white;
+}
+
+@media (max-width: 1024px) {
+  .skill-heading {
+    margin-left: -2em;
+  }
 }
 
 .skill-heading h3::after {
@@ -510,6 +612,12 @@ p {
   margin: 7em 1em 0em 2em;
 }
 
+@media (max-width: 1024px) {
+  .skill-content {
+    margin: 7em 1em 0em 0em;
+  }
+}
+
 .app-tools {
   margin-top: 2em;
 }
@@ -518,6 +626,9 @@ p {
   margin-top: 2em;
 }
 
+/*
+    iem = 14px
+*/
 .project-heading {
   margin: 4em 0em 0em 1em;
 }
@@ -534,18 +645,73 @@ p {
   margin: 7em 0em 7em 4em;
 }
 
+@media (max-width: 860px) {
+  .card {
+    margin: 7em 0em 7em 0em;
+  }
+}
+
 .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 860px) {
+  .card-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2;
+        grid-template-columns: 2;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .card-image img {
   width: 32em;
 }
 
+@media (max-width: 1024px) {
+  .card-image img {
+    width: 26em;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-image img {
+    width: 20em;
+  }
+}
+
+@media (max-width: 860px) {
+  .card-image {
+    text-align: center;
+  }
+}
+
 .content {
   margin: 0em 2em 0em 2em;
+}
+
+@media (max-width: 860px) {
+  .content {
+    margin: 0em 1em 0em 0em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-heading {
+    margin-top: -1em;
+  }
+}
+
+@media (max-width: 860px) {
+  .card-heading {
+    margin-top: 2em;
+    margin-left: 1em;
+  }
 }
 
 .card-heading h2 {
@@ -554,6 +720,12 @@ p {
 
 .main {
   margin-left: 1em;
+}
+
+@media (max-width: 860px) {
+  .main {
+    margin-left: 1em;
+  }
 }
 
 .source {
