@@ -21,7 +21,13 @@
   background-color: rgba(255, 145, 42, 0.301);
 }
 
+.explore-btn a, .know-more-btn a {
+  color: white;
+  text-decoration: none;
+}
+
 :root {
+  background-color: #001c18;
   margin: 0px;
   padding: 0px;
 }
@@ -59,6 +65,11 @@ p {
   background-color: rgba(255, 145, 42, 0.301);
 }
 
+.explore-btn a, .know-more-btn a {
+  color: white;
+  text-decoration: none;
+}
+
 .bottom-line, .introduceMe .bottomLine:nth-child(2), .introduceMe .bottomLine:nth-child(3) {
   width: 330px;
   height: 1px;
@@ -90,6 +101,127 @@ p {
 .heroImage img {
   width: 14em;
   float: right;
+}
+
+.profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profiles a {
+  color: white;
+  margin: 0.5em;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5em;
+}
+
+.profiles a img {
+  margin: 0em 0.5em 0em 0em;
+}
+
+.linkedin {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#0a66c2), color-stop(50%, #0a66c2), color-stop(50%, white));
+  background: linear-gradient(to right, #0a66c2, #0a66c2 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.linkedin:hover {
+  background-position: 0 100%;
+}
+
+.instagram {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#af2634), color-stop(50%, #af2634), color-stop(50%, white));
+  background: linear-gradient(to right, #af2634, #af2634 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.instagram:hover {
+  background-position: 0 100%;
+}
+
+.github {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#0d1117), color-stop(50%, #0d1117), color-stop(50%, white));
+  background: linear-gradient(to right, #0d1117, #0d1117 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.github:hover {
+  background-position: 0 100%;
+}
+
+.leetcode {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#9b7e00), color-stop(50%, #9b7e00), color-stop(50%, white));
+  background: linear-gradient(to right, #9b7e00, #9b7e00 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.leetcode:hover {
+  background-position: 0 100%;
+}
+
+.hackerRank {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#048100), color-stop(50%, #048100), color-stop(50%, white));
+  background: linear-gradient(to right, #048100, #048100 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.hackerRank:hover {
+  background-position: 0 100%;
 }
 
 .introduceMe {
@@ -240,14 +372,19 @@ p {
 }
 
 .footer {
-  background-color: black;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.459);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.up-arrow:hover {
+  margin-top: -0.5em;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .navbar {
@@ -280,6 +417,7 @@ p {
   border-bottom: 3px solid #ff912a;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  border-radius: 2em;
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -295,5 +433,130 @@ p {
   color: white;
   font-size: 20px;
   text-decoration: none;
+}
+
+.heading {
+  margin: 5em 2em 2em 2em;
+}
+
+.heading h1::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  width: 7em;
+  border-bottom: 2px solid white;
+}
+
+.about-me-content {
+  margin: 7em 2em 2em 2em;
+}
+
+.about-me-content .avatar {
+  width: 7em;
+  height: 7em;
+  margin-top: -7em;
+  margin-left: 4.5em;
+}
+
+.about-me-content .my-self {
+  background-color: #ff912a;
+  height: auto;
+  width: 20em;
+  float: left;
+  padding: 4em 2em 2em 2em;
+  margin: 0em 0em 0em 7em;
+  border-radius: 1.5em;
+  color: black;
+  font-weight: 800;
+}
+
+.about-me-content .my-self p {
+  color: black;
+}
+
+.skills {
+  margin: 0em 0em 0em 7em;
+  position: relative;
+}
+
+.about-and-skills-content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.small-about-heading {
+  width: 80px;
+  margin-left: 4em;
+}
+
+.small-about-heading::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  border-bottom: 2px solid white;
+}
+
+.skill-heading h3::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  width: 2.7em;
+  border-bottom: 2px solid white;
+}
+
+.skill-content {
+  margin: 7em 1em 0em 2em;
+}
+
+.app-tools {
+  margin-top: 2em;
+}
+
+.tools {
+  margin-top: 2em;
+}
+
+.project-heading {
+  margin: 4em 0em 0em 1em;
+}
+
+.project-heading::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  width: 4.5em;
+  border-bottom: 2px solid white;
+}
+
+.card {
+  margin: 7em 0em 7em 4em;
+}
+
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-image img {
+  width: 32em;
+}
+
+.content {
+  margin: 0em 2em 0em 2em;
+}
+
+.card-heading h2 {
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 1em;
+}
+
+.source {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

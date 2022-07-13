@@ -1,0 +1,83 @@
+.heading {
+  margin: 5em 2em 2em 2em;
+}
+
+.heading h1::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  width: 7em;
+  border-bottom: 2px solid white;
+}
+
+.about-me-content {
+  margin: 7em 2em 2em 2em;
+}
+
+.about-me-content .avatar {
+  width: 7em;
+  height: 7em;
+  margin-top: -7em;
+  margin-left: 4.5em;
+}
+
+.about-me-content .my-self {
+  background-color: #ff912a;
+  height: auto;
+  width: 20em;
+  float: left;
+  padding: 4em 2em 2em 2em;
+  margin: 0em 0em 0em 7em;
+  border-radius: 1.5em;
+  color: black;
+  font-weight: 800;
+}
+
+.about-me-content .my-self p {
+  color: black;
+}
+
+.skills {
+  margin: 0em 0em 0em 7em;
+  position: relative;
+}
+
+.about-and-skills-content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.small-about-heading {
+  width: 80px;
+  margin-left: 4em;
+}
+
+.small-about-heading::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  border-bottom: 2px solid white;
+}
+
+.skill-heading h3::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  width: 2.7em;
+  border-bottom: 2px solid white;
+}
+
+.skill-content {
+  margin: 7em 1em 0em 2em;
+}
+
+.app-tools {
+  margin-top: 2em;
+}
+
+.tools {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=about.css.map */

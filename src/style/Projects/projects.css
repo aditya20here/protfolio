@@ -1,0 +1,42 @@
+.project-heading {
+  margin: 4em 0em 0em 1em;
+}
+
+.project-heading::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;
+  width: 4.5em;
+  border-bottom: 2px solid white;
+}
+
+.card {
+  margin: 7em 0em 7em 4em;
+}
+
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-image img {
+  width: 32em;
+}
+
+.content {
+  margin: 0em 2em 0em 2em;
+}
+
+.card-heading h2 {
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 1em;
+}
+
+.source {
+  font-weight: bold;
+}
+/*# sourceMappingURL=projects.css.map */

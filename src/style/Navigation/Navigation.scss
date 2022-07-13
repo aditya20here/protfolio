@@ -22,6 +22,7 @@
         display: block;
         border-bottom: 3px solid $linesColor;
         transform: scaleX(0);
+        border-radius: 2em;
         transition: transform 250ms ease-in-out;
       }
       &:hover::after {

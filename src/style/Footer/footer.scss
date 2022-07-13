@@ -1,9 +1,10 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.459);
+  display: flex;
+  justify-content: center;
+}
 
-
-
-.footer{
-    background-color: black;
-    color: black;
-    display: flex;
-    justify-content: center;
+.up-arrow:hover {
+  margin-top: -0.5em;
+  transition: 500ms;
 }

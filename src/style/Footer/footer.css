@@ -1,11 +1,16 @@
 .footer {
-  background-color: black;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.459);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.up-arrow:hover {
+  margin-top: -0.5em;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 /*# sourceMappingURL=footer.css.map */
