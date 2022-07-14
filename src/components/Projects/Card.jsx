@@ -1,9 +1,7 @@
-import { CardMedia } from '@mui/material'
+
 import React from 'react'
-import { Image } from 'react-bootstrap'
 import youtube from '../../data/images/youtube.png'
 import github from '../../data/images/github.png'
-import { margin } from '@mui/system'
 
 
 const Card = (props) => {
@@ -15,7 +13,7 @@ const Card = (props) => {
             <div className="card">
                 <div className="card-content">
                     <div className="card-image">
-                        <img src={data.projectImage} alt="project image" />
+                        <img src={data.projectImage} alt="project" />
                     </div>
                     <div className='content'>
                         <div className="card-heading">
@@ -32,14 +30,14 @@ const Card = (props) => {
                                 <a href={data.youtubeLink} target='_black'>
                                     <img
                                         src={youtube}
-                                        alt="youtube image"
+                                        alt="youtube"
                                         width={20}
                                     /></a>
 
                                 <a href={data.githubLink} target='_black'>
                                     <img
                                         src={github}
-                                        alt="github image"
+                                        alt="github"
                                         width={20}
                                         style={{
                                             marginLeft: '1em'

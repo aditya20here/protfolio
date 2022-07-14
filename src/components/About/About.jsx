@@ -1,7 +1,6 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
 import user from '../../data/images/user.png'
-import { Row, Col } from 'react-bootstrap'
 const AboutAndSkills = () => {
     return (
         <>
