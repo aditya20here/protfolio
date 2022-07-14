@@ -11,7 +11,7 @@ const Projects = () => {
         <>
 
             <div className="projects" id="projects">
-                <h1 className='project-heading'>Projects</h1>
+                <h1 className='project_heading'>Projects</h1>
                 {
                     projectData.map((e) => {
                         return <div>

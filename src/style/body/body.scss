@@ -6,6 +6,19 @@
   padding: 0px;
 }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(197, 115, 0);
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+} /* Handle */
+
 h1,
 h2,
 h3,

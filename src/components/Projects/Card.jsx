@@ -1,4 +1,3 @@
-
 import React from 'react'
 import youtube from '../../data/images/youtube.png'
 import github from '../../data/images/github.png'
@@ -11,12 +10,12 @@ const Card = (props) => {
         <>
 
             <div className="card">
-                <div className="card-content">
-                    <div className="card-image">
+                <div className="card_content">
+                    <div className="card_image">
                         <img src={data.projectImage} alt="project" />
                     </div>
                     <div className='content'>
-                        <div className="card-heading">
+                        <div className="card_heading">
                             <h2>{data.projectTitle}</h2>
                         </div>
                         <div className="main">
@@ -26,7 +25,7 @@ const Card = (props) => {
                             <div className="description">
                                 <p>{data.projectDescription}</p>
                             </div>
-                            <div className="demo-links">
+                            <div className="demo_links">
                                 <a href={data.youtubeLink} target='_black'>
                                     <img
                                         src={youtube}

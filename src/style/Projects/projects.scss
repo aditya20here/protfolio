@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-.project-heading {
+.project_heading {
   margin: 4em 0em 0em 1em;
 
   @include for_breakpoint(laptop-m) {
@@ -24,7 +24,7 @@
   }
 }
 
-.card-content {
+.card_content {
   display: flex;
 
   @include for_breakpoint(tablet) {
@@ -34,7 +34,7 @@
   }
 }
 
-.card-image {
+.card_image {
   img {
     width: 32em;
 
@@ -58,7 +58,7 @@
   }
 }
 
-.card-heading {
+.card_heading {
   @include for_breakpoint(laptop) {
     margin-top: -1em;
   }

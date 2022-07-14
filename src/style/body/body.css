@@ -4,6 +4,22 @@
   padding: 0px;
 }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c57300;
+  border-radius: 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
 h1,
 h2,
 h3,

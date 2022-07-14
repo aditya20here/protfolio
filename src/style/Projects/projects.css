@@ -1,11 +1,11 @@
 /*
     iem = 14px
 */
-.project-heading {
+.project_heading {
   margin: 4em 0em 0em 1em;
 }
 
-.project-heading::after {
+.project_heading::after {
   content: "";
   display: block;
   margin-top: 0.3em;
@@ -23,14 +23,14 @@
   }
 }
 
-.card-content {
+.card_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 860px) {
-  .card-content {
+  .card_content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2;
@@ -41,24 +41,24 @@
   }
 }
 
-.card-image img {
+.card_image img {
   width: 32em;
 }
 
 @media (max-width: 1024px) {
-  .card-image img {
+  .card_image img {
     width: 26em;
   }
 }
 
 @media (max-width: 425px) {
-  .card-image img {
+  .card_image img {
     width: 20em;
   }
 }
 
 @media (max-width: 860px) {
-  .card-image {
+  .card_image {
     text-align: center;
   }
 }
@@ -74,19 +74,19 @@
 }
 
 @media (max-width: 1024px) {
-  .card-heading {
+  .card_heading {
     margin-top: -1em;
   }
 }
 
 @media (max-width: 860px) {
-  .card-heading {
+  .card_heading {
     margin-top: 2em;
     margin-left: 1em;
   }
 }
 
-.card-heading h2 {
+.card_heading h2 {
   font-weight: bold;
 }
 

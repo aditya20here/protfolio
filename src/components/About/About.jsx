@@ -10,11 +10,11 @@ const AboutAndSkills = () => {
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
 
-                <div className='about-and-skills-content'>
+                <div className='about_and_skills_content'>
                     <div>
                         {/* <h4 className='small-about-heading' >About me</h4> */}
-                        <div className="about-me-content">
-                            <div className="my-self">
+                        <div className="about_me_content">
+                            <div className="my_self">
                                 <Avatar className='avatar' src={user} alt="user photo" />
                                 <p >
                                     Hello, I'm Aditya Basude and i am a Full-stack web and App developer.

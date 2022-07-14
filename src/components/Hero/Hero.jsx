@@ -13,7 +13,14 @@ const Hero = () => {
         <div className="HeroContent" id='Hero'>
             <div>
                 <div className="heroImage">
-                    <img src={me} />
+                    <div className="img_content">
+                        <div className="img_front">
+                            <img src={me} />
+                        </div>
+                        {/* <div className="img_back">
+                            <h5>Aditya</h5>
+                        </div> */}
+                    </div>
                 </div>
 
                 <div className="introduceMe">
@@ -83,7 +90,7 @@ const Hero = () => {
                     justifyContent: 'center'
                 }}>
                     <a href='#about'>
-                        <button className='know-more-btn' >
+                        <button className='know_more_btn' >
                             Know more
                         </button>
                     </a>

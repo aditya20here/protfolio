@@ -1,4 +1,4 @@
-.explore-btn, .know-more-btn {
+.explore-btn, .know_more_btn {
   outline: none;
   background: none;
   border: none;
@@ -12,15 +12,15 @@
           box-shadow: 0px 0px 10px 0px #ff912a;
 }
 
-.explore-btn::before, .know-more-btn::before {
+.explore-btn::before, .know_more_btn::before {
   content: "";
 }
 
-.explore-btn:hover, .know-more-btn:hover {
+.explore-btn:hover, .know_more_btn:hover {
   background-color: rgba(255, 145, 42, 0.301);
 }
 
-.explore-btn a, .know-more-btn a {
+.explore-btn a, .know_more_btn a {
   color: white;
   text-decoration: none;
 }
@@ -107,6 +107,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.5em;
+}
+
+@media (max-width: 425px) {
+  .profiles a {
+    margin: 0em;
+  }
 }
 
 .profiles a img {
@@ -227,7 +233,7 @@
   margin: 0.2em 1em 0em 0em;
 }
 
-.know-more-btn {
+.know_more_btn {
   margin: 1.5em 0em 0em 0em;
   -webkit-animation: shakeAnim 5s ease-in;
           animation: shakeAnim 5s ease-in;
